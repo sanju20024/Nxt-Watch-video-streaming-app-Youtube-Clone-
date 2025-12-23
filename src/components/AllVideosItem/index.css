@@ -1,0 +1,92 @@
+/* index.css */
+
+/* Remove default list styling */
+.video-item {
+  list-style-type: none;
+  width: 100%;
+  min-width: 290px; /* Adjust based on your grid layout */
+  max-width: 280px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+/* The Video Thumbnail */
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Container for Profile Image + Text */
+.video-details-container {
+  display: flex;
+  align-items: flex-start; /* Aligns profile pic to the top of the text */
+  gap: 12px;
+}
+
+/* Channel Profile Image */
+.profile-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video Title */
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+  /* Optional: Truncate title after 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Channel Name */
+.channel-name {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Views and Date row */
+.views-date-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Add a dot separator between views and date */
+.view-count::after {
+  content: '•';
+  margin-left: 5px;
+}
+
+.published-date {
+  margin: 0;
+}
+
+/* Responsive adjustment for small screens */
+@media screen and (max-width: 576px) {
+  .video-item {
+    max-width: 100%;
+  }
+}
+.link-items {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}

@@ -1,0 +1,128 @@
+/* ================= Layout ================= */
+.slide-saved-flexes {
+  display: flex;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+}
+
+/* Sidebar placeholder */
+.sidebar-space {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+/* Content wrapper */
+.saved-content-wrapper {
+  flex: 1;
+  height: 100%;
+}
+
+/* Scrollable content */
+.saved-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 24px;
+}
+
+/* ================= Saved Videos Container ================= */
+.saved-videos-container {
+  width: 100%;
+}
+
+/* ================= Banner ================= */
+.banner-light,
+.banner-dark {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.banner-light {
+  background-color: #f1f5f9;
+}
+
+.banner-dark {
+  background-color: #212121;
+}
+
+/* ================= Icon Background ================= */
+.icon-bg-light,
+.icon-bg-dark {
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.icon-bg-light {
+  background-color: #e2e8f0;
+}
+
+.icon-bg-dark {
+  background-color: #000000;
+}
+
+/* ================= Fire Icon ================= */
+.fire-icon {
+  color: #ff0b37;
+  font-size: 30px;
+}
+
+/* ================= Titles ================= */
+.title-light {
+  color: #1e293b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title-dark {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ================= Videos List ================= */
+.videos-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ================= No Saved Videos ================= */
+.no-saved-videos-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.no-saved-image {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* ================= Responsive ================= */
+@media screen and (max-width: 768px) {
+  .slide-saved-flexes {
+    display: block;
+    height: calc(100vh - 64px);
+  }
+
+  .sidebar-space {
+    display: none;
+  }
+
+  .saved-scroll {
+    padding: 16px;
+  }
+
+  .videos-list-container {
+    justify-content: center;
+  }
+}

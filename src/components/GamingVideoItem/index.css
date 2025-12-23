@@ -1,0 +1,39 @@
+.link-style {
+  text-decoration: none;
+}
+
+.video-item-g {
+  list-style-type: none;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.video-details-container {
+  margin-top: 8px;
+}
+
+.title-light-g {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.title-dark-g {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.view-count {
+  color: #64748b;
+  font-size: 12px;
+}

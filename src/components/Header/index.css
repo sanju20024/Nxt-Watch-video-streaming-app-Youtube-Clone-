@@ -1,0 +1,279 @@
+/* ================= NAVBAR ================= */
+.nav-light {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-dark {
+  background-color: #181818;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+/* ================= LOGO ================= */
+.nav-logo {
+  width: 140px;
+  user-select: none;
+}
+
+/* ================= DESKTOP ================= */
+.desktop-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* ================= PROFILE ================= */
+.profile-img {
+  width: 32px;
+  margin: 0 16px;
+  border-radius: 50%;
+}
+
+/* ================= LOGOUT BUTTON ================= */
+.logout-btn {
+  border: 1px solid #3b82f6;
+  background: transparent;
+  color: #3b82f6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.logout-btn:active {
+  transform: scale(0.97);
+}
+
+/* ================= ICON BUTTONS ================= */
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s ease;
+}
+
+.icon-btn:active {
+  transform: scale(0.92);
+}
+
+.icon-light {
+  color: #1e293b;
+}
+
+.icon-dark {
+  color: #ffffff;
+}
+
+/* ================= MOBILE ACTIONS ================= */
+.mobile-actions {
+  display: none;
+  align-items: center;
+}
+
+/* ================= HAMBURGER MENU ================= */
+.mobile-menu-light,
+.mobile-menu-dark {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-menu-light {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu-dark {
+  background-color: #212121;
+  border-top: 1px solid #383838;
+}
+
+/* ================= MENU ITEMS ================= */
+.list-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Light Theme */
+.mobile-menu-light .list-link {
+  color: #1e293b;
+}
+
+.mobile-menu-light .list-link:hover {
+  background-color: #f1f5f9;
+}
+
+/* Dark Theme */
+.mobile-menu-dark .list-link {
+  color: #ffffff;
+}
+
+.mobile-menu-dark .list-link:hover {
+  background-color: #2f2f2f;
+}
+
+/* Divider */
+.mobile-menu-light .list-link + .list-link {
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu-dark .list-link + .list-link {
+  border-top: 1px solid #3a3a3a;
+}
+
+/* Tap feedback */
+.list-link:active {
+  transform: scale(0.97);
+}
+
+/* ================= LOGOUT POPUP ================= */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 🔥 FIXED POPUP STRETCH ISSUE */
+.popup-light,
+.popup-dark {
+  width: 100%;
+  max-width: 90vw;
+  background-color: transparent;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: popupScale 0.2s ease-out;
+
+  display: block;
+  flex-shrink: 0;
+}
+
+.popup-light {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.popup-dark {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.popup-light p,
+.popup-dark p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* ================= POPUP BUTTONS ================= */
+.popup-btn-container {
+  display: flex;
+  gap: 12px;
+}
+
+.popup-cancel-btn,
+.popup-confirm-btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Cancel */
+.popup-cancel-btn {
+  background: transparent;
+  border: 1px solid #94a3b8;
+  color: inherit;
+}
+
+.popup-cancel-btn:hover {
+  background-color: rgba(148, 163, 184, 0.15);
+}
+
+/* Confirm */
+.popup-confirm-btn {
+  background-color: #3b82f6;
+  border: none;
+  color: #ffffff;
+}
+
+.popup-confirm-btn:hover {
+  background-color: #2563eb;
+}
+
+.popup-confirm-btn:active,
+.popup-cancel-btn:active {
+  transform: scale(0.96);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes popupScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+  .desktop-actions {
+    display: none;
+  }
+
+  .mobile-actions {
+    display: flex;
+  }
+}
+
+/* ================= LIST RESET ================= */
+.newListItem {
+  list-style: none;
+}
+/* 🔥 FORCE FIX reactjs-popup WHITE STRIP */
+.popup-content {
+  width: auto !important;
+  max-width: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+}
