@@ -8,7 +8,7 @@ This project implements authentication, protected routes, theme switching, and v
 ## 🔗 Links
 
 - **Repository:** https://github.com/sanju20024/Nxt-Watch-video-streaming-app-Youtube-Clone-
-- **Live Application:** (Add deployment link after hosting)
+- **Live Application:** https://nxtwatchytsanju.ccbp.tech/
 
 ---
 
